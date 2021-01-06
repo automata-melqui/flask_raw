@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+
+{% block title %}Tutorial Flask: Miniblog{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for post in posts %}
+        <li>{{ post.title }}<a href="{{url_for('show_post',slug=post.title_slug)}}">ver post</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

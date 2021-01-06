@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    Mostrando el post 
+    <br>
+    <br> {{ post.title_slug }}
+    <br>
+    <br> {{ post.content }}
+{% endblock %}
